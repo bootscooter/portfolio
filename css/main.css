@@ -11,73 +11,47 @@ h1 {
 }
 
 body {
-	background-image: url("LogoAndPage Heading.png");
+	background-image: url("../img/LandingPage.jpg");
 	background-repeat: no-repeat;
-    background-size: cover;
+  background-size: auto;
 }
+
+#nav-container {
+  float: left;
+  margin-top: 265px;
+  width: 280px;
+}
+
+nav ul {
+  color: #686868;
+  font-family: "Josefin Slab", serif;
+  font-size: 18px;
+  line-height: 250%;
+
+  text-decoration: none;
+}
+
+nav li {
+  color: #686868;
+}
+
+#card-file {
+  float: left;
+  margin-top: 158px;
+  margin-left: 278px;
+  width: 1850px;
+  height: 436px;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+
 
 /*** GRID***/
-.left-div {
-	margin: 30px 0 30px 30px;
-	position: fixed;
-	width: 400px;
-}
 
-.right-div {
-	background-image: url(.img/whiteBackgroundFeathers.jpg);
-	overflow-x: scroll;
-  	overflow-y: hidden;
-  	margin-left: 400px;
-  	white-space: nowrap;
-}
 
- .card-text {
-    display: inline-block;
-    height: 428px;
-    width: 200px;
-	margin-top: 215px;
 
- }
-
- .card-image {
-    display: inline-block;
-    height: 428px;
-    width: 400px;
-	margin-top: 215px;
-
- }
-
-::-webkit-scrollbar {
-       height: 6px;
-}
-
-#style-1::-webkit-scrollbar {
-    width: 6px;
-    background-color: #F5F5F5;
-}
-
-#style-1::-webkit-scrollbar-thumb {
-    background-color: #065751;
-}
-}
-
-/*** Menu Div ***/
- 
- nav {
- 	margin-top: 300px;
- }
-
- nav ul li a{
- 	color: #686868;
- 	font-family: "Josefin Slab", serif;
- 	font-size: 20px;
- 	line-height: 220%;
- 	text-decoration: none;
- }
-
- ul li {
- 	list-style: none;
- }
 
 
 
