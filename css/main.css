@@ -1,0 +1,112 @@
+/***** BASE STYLES *****/
+body p {
+	font-family: "Josefin Slab", serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: "Josefin slab", serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+body {
+	background-image: url("LogoAndPage Heading.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** GRID***/
+.left-div {
+	margin: 30px 0 30px 30px;
+	position: fixed;
+	width: 400px;
+}
+
+.right-div {
+	background-image: url(.img/whiteBackgroundFeathers.jpg);
+	overflow-x: scroll;
+  	overflow-y: hidden;
+  	margin-left: 400px;
+  	white-space: nowrap;
+}
+
+ .card-text {
+    display: inline-block;
+    height: 428px;
+    width: 200px;
+	margin-top: 215px;
+
+ }
+
+ .card-image {
+    display: inline-block;
+    height: 428px;
+    width: 400px;
+	margin-top: 215px;
+
+ }
+
+::-webkit-scrollbar {
+       height: 6px;
+}
+
+#style-1::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #065751;
+}
+}
+
+/*** Menu Div ***/
+ 
+ nav {
+ 	margin-top: 300px;
+ }
+
+ nav ul li a{
+ 	color: #686868;
+ 	font-family: "Josefin Slab", serif;
+ 	font-size: 20px;
+ 	line-height: 220%;
+ 	text-decoration: none;
+ }
+
+ ul li {
+ 	list-style: none;
+ }
+
+
+
+
+
+/*** HORIZONTAL SCROLL GO-BY
+https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left: 200px;
+  white-space: nowrap;
+}
+
+ .card {
+    display: inline-block;
+ }
+
+::-webkit-scrollbar {
+       height: 6px;
+}
+
+#style-1::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #065751;
+}
+***/
