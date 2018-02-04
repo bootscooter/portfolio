@@ -1,5 +1,11 @@
 /***** BASE STYLES *****/
-body p {
+body {
+  background-image: url("../img/LandingPage.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+p {
 	font-family: "Josefin Slab", serif;
 	font-size: 16px;
 }
@@ -10,12 +16,10 @@ h1 {
 	text-transform: uppercase;
 }
 
-body {
-	background-image: url("../img/LandingPage.jpg");
-	background-repeat: no-repeat;
-  background-size: auto;
-}
 
+/***** SECTIONS *****/
+
+/***** NAV MENU *****/
 #nav-container {
   float: left;
   margin-top: 265px;
@@ -35,21 +39,24 @@ nav li {
   color: #686868;
 }
 
-#card-file {
+
+/***** HORIZONAL SCROLL AREA *****/
+.horz-scroll-container {
   float: left;
-  margin-top: 158px;
-  margin-left: 278px;
-  width: 1850px;
   height: 436px;
+  margin-top: 158px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: no-wrap;
+
   -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
+
+  .card {
+    display: inline-block;
+  }
 }
-
-
-
-/*** GRID***/
-
 
 
 
