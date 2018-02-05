@@ -3,6 +3,7 @@ body {
   background-image: url("../img/LandingPage.jpg");
   background-repeat: no-repeat;
   background-size: auto;
+  width: 2268px;
 }
 
 p {
@@ -44,6 +45,7 @@ nav li {
 .horz-scroll-container {
   float: left;
   height: 436px;
+  width: 920px;
   margin-top: 158px;
   overflow-x: scroll;
   overflow-y: hidden;
