@@ -9,12 +9,20 @@ body {
 p {
 	font-family: "Josefin Slab", serif;
 	font-size: 16px;
+  line-height: 133%;
 }
 
 h1 {
 	font-family: "Josefin slab", serif;
 	font-size: 20px;
 	text-transform: uppercase;
+}
+
+h3 {
+  font-family: "open sans condensed", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  margin: 0;
 }
 
 /***  NAV ***/
@@ -29,7 +37,6 @@ nav ul {
   font-family: "Josefin Slab", serif;
   font-size: 18px;
   line-height: 250%;
-
   text-decoration: none;
 }
 
@@ -40,11 +47,32 @@ nav li {
 
 
 /***** HORIZONAL SCROLL AREA *****/
+
+
+
 /*** PARENT GRID CONTAINER ***/
+
+.grid-container p {
+  text-align: right;
+}
+
+.grid-container h3 {
+  text-align: right;
+}
+
 .grid-container {
+  background-color: #ffffff;
   display: inline-grid;
-  grid-template-columns: [aboutText] 176px [aboutPhoto] 270px 176px 270px 176px 270px;
+  grid-column-gap: 12px;
+  grid-template-columns: 186px  280px 176px 280px 176px 280px;
   grid-template-rows: auto;
+  margin-top: 156px;
+  overflow: scroll;
+  overflow-y: hidden;
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000
 }
 
 .col-1-item {
@@ -52,14 +80,56 @@ nav li {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+  margin-top: 70px;
+  padding-left: 10px;
 }
+
+.col-2-item {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  padding-right: 10px;
+}
+
+.col-3-item {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+}
+
+.col-4-item {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  padding-right: 10px;
+}
+
+.col-5-item {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+}
+
+.col-6-item {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  overlow: visible;
+  padding-right: 200px;
 }
 
 
-
-
-
-
+/*** SCROLLBAR STYLES **/
 
 
 
