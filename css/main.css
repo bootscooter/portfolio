@@ -3,9 +3,10 @@ body {
   background-image: url("../img/LandingPage.jpg");
   background-repeat: no-repeat;
   background-size: auto;
-  width: 2268px;
-  /*max-width: 100%;*/
-  overflow-x: hidden;
+  max-height: 100%;
+  /*width: 2268px;*/
+  max-width: 100%;
+  /*overflow-x: hidden;*/
 }
 
 p {
@@ -63,23 +64,26 @@ nav li {
   text-align: right;
 }
 
+#parent-container {
+  width: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+
+}
+
 .grid-container {
   background-color: #ffffff;
   display: inline-grid;
   grid-column-gap: 12px;
-  grid-template-columns: 186px  280px 176px 280px 176px 280px;
+  grid-template-columns: [col1] 186px [col2] 280px [col3] 176px [col4] 280px [col5] 176px [col6] 580px [col7] 176px [col8] 280px [col9] 176px;
   grid-template-rows: auto;
   margin-top: 156px;
-  overflow: scroll;
-  overflow-y: hidden;
+     ::-webkit-scrollbar-thumb {
+     background-color: #0076a3;
+    }
 }
  
-
-
-  /*-moz-box-shadow:    inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000
-}*/
 
 .col-1-item {
   grid-column-start: 1;
@@ -130,46 +134,41 @@ nav li {
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
-  overlow: visible;
+  overflow: hidden;
   padding-right: 200px;
 }
 
+.col-7-item {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+}
 
-/*** SCROLLBAR STYLES **/
-#grid-horz-scroll::-webkit-scrollbar {
+.col-8-item {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;;
+}
+.col-9-item {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+/*** SCROLLBAR STYLES ***/
+.grid-horz-scroll::-webkit-scrollbar {
   height: 6px;
   background-color: #F5F5F5;
 }
 
-#grid-horz-scroll::-webkit-scrollbar-thumb {
+.grid-horz-scroll::-webkit-scrollbar-thumb {
   background-color: #0076a3;
 }
 
 
-/*** HORIZONTAL SCROLL GO-BY
-https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-left: 200px;
-  white-space: nowrap;
-}
-
- .card {
-    display: inline-block;
- }
-
-::-webkit-scrollbar {
-       height: 6px;
-}
-
-#style-1::-webkit-scrollbar {
-    width: 6px;
-    background-color: #F5F5F5;
-}
-
-#style-1::-webkit-scrollbar-thumb {
-    background-color: #065751;
-}
-***/
