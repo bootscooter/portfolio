@@ -48,7 +48,18 @@ nav li {
   color: #686868;
 }
 
+::-webkit-scrollbar {
+       height: 6px;
+}
 
+#style-1::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #065751;
+}
 
 /***** HORIZONAL SCROLL AREA *****/
 
@@ -68,8 +79,6 @@ nav li {
   width: auto;
   overflow-x: scroll;
   overflow-y: hidden;
-
-
 }
 
 .grid-container {
