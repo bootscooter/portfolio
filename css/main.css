@@ -7,6 +7,18 @@ body {
   /*width: 2268px;*/
   max-width: 100%;
   /*overflow-x: hidden;*/
+
+  $(function() {
+
+   $("body").mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 30);
+    
+      event.preventDefault();
+
+   });
+
+});
 }
 
 p {
@@ -52,7 +64,7 @@ nav li {
        height: 6px;
 }
 
-#style-1::-webkit-scrollbar {
+#git ::-webkit-scrollbar {
     width: 6px;
     background-color: #F5F5F5;
 }
@@ -62,8 +74,6 @@ nav li {
 }
 
 /***** HORIZONAL SCROLL AREA *****/
-
-
 
 /*** PARENT GRID CONTAINER ***/
 
@@ -79,13 +89,15 @@ nav li {
   width: auto;
   overflow-x: scroll;
   overflow-y: hidden;
+  -ms-scroll-translation: vertical-to-horizontal;
+  scroll-behavior: smooth;
 }
 
 .grid-container {
   background-color: #ffffff;
   display: inline-grid;
-  grid-column-gap: 12px;
-  grid-template-columns: [col1] 186px [col2] 280px [col3] 176px [col4] 280px [col5] 176px [col6] 580px [col7] 176px [col8] 280px [col9] 176px;
+  grid-column-gap: 18px;
+  grid-template-columns: [col1] 196px [col2] 280px [col3] 186px [col4] 280px [col5] 186px [col6] 580px [col7] 186px [col8] 458px [col9] 186px;
   grid-template-rows: auto;
   margin-top: 156px;
      ::-webkit-scrollbar-thumb {
@@ -93,7 +105,7 @@ nav li {
     }
 }
  
-
+/***  GRID ITEMS ***/
 .col-1-item {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -109,7 +121,23 @@ nav li {
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
-  padding-right: 10px;
+  width: 270px;
+  background-image: url('../img/AboutPortrait-sprite.jpg');
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.col-2-item:hover {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  width: 270px;
+  background-image: url('../img/AboutPortrait-sprite.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  overflow: hidden;
 }
 
 .col-3-item {
@@ -127,6 +155,25 @@ nav li {
   grid-row-end: 1;
   margin-top: 70px;
   padding-right: 10px;
+  background-image: url('../img/HNCK4941-duotone.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 270px;
+}
+
+.col-4-item:hover {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  padding-right: 10px;
+  background-image: url('../img/HNCK4941.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 270px;
 }
 
 .col-5-item {
@@ -145,6 +192,26 @@ nav li {
   margin-top: 70px;
   overflow: hidden;
   padding-right: 200px;
+  background-image: url('../img/Microsoft-Proposal-2-duotone.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 580px;
+}
+
+.col-6-item:hover {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  overflow: hidden;
+  padding-right: 200px;
+  background-image: url('../img/Microsoft-Proposal-2.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 580px;
 }
 
 .col-7-item {
@@ -160,8 +227,42 @@ nav li {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 1;
-  margin-top: 70px;;
+  margin-top: 70px;
+  background-image: url('../img/Wireframe_Final-duotone.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 290px;
 }
+
+.col-8-item {
+  border: 1px solid #0176a2;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  background-image: url('../img/WebfootLandingPage-duotone.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 458px;
+}
+
+.col-8-item:hover {
+  border: 1px solid #0176a2;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 70px;
+  background-image: url('../img/WebfootLandingPage.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  overflow: hidden;
+  width: 458px;
+}
+
 .col-9-item {
   grid-column-start: 9;
   grid-column-end: 10;
