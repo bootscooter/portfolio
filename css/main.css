@@ -32,6 +32,10 @@ h3 {
   margin: 0;
 }
 
+.wrap {
+  min-height: calc(100vh - 100px);
+}
+
 #logo {
   display: inline-block;
   width: 200px;
@@ -326,20 +330,23 @@ nav li a:visited {
 
 /***** FOOTER STYLES *****/
 footer {
-  display: block;
-  height: 350px;
   position: fixed;
   left: 0px;
   bottom: 0px
   width: 100%;
+  text-align: left;
+  height: 100px;
 }
 
-.footer-grid-container {
-  background-color: #ffffff;
-  display: inline-grid;
-  grid-column-gap: 6px;
-  grid-template-columns: [col1] 29 [col2] 29px [col3] 229px;
-  grid-template-rows: auto;
-  margin-top: 156px;
+footer img {
+  display: inline-block;
+  margin: 40px 0px 0px 40px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
 
 
