@@ -1,11 +1,17 @@
 /***** BASE STYLES *****/
-body {
-  background-image: url("../img/LandingPage.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  max-height: 768px;
-  max-width: 100%;
-  overflow-x: hidden;
+html { 
+  background: url("../img/LandingPage2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body img {
+  position: fixed;
+  left: 20px;
+  top: 30px;
+
 }
 
 p {
@@ -53,6 +59,7 @@ nav li a {
 nav li a:hover {
   color: #0076a3;
   display: block;
+  text-decoration: underline;
 }
 
 ::-webkit-scrollbar {
