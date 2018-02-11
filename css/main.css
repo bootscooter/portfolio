@@ -1,5 +1,8 @@
 /***** BASE STYLES *****/
-
+body {
+  display: block;
+  position: relative;
+}
 
 html { 
   background: url("../img/LandingPage2.jpg") no-repeat center center fixed; 
@@ -11,8 +14,8 @@ html {
 
 p {
 	font-family: "Josefin Slab", serif;
-	font-size: 16px;
-  line-height: 133%;
+	font-size: 18px;
+  line-height: 140%;
 }
 
 h1 {
@@ -29,15 +32,16 @@ h3 {
   margin: 0;
 }
 
-body img {
+#logo {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+}
+
+#logo img {
   position: fixed;
   left: -30px;
   top: 0px;
-}
-
-#logo {
-  width: 200px;
-  overflow: hidden;
 }
 
 /***  NAV ***/
@@ -68,6 +72,10 @@ nav li a:hover {
   text-decoration: underline;
 }
 
+nav li a:visited {
+  color: #0076a3;
+}
+
 ::-webkit-scrollbar {
        height: 6px;
 
@@ -90,8 +98,8 @@ nav li a:hover {
 }
 
 /*#style-1::-webkit-scrollbar-thumb {
-    background-color: #065751;*/
-}
+    background-color: #065751;
+}*/
 
 /***** HORIZONAL SCROLL AREA *****/
 
@@ -117,12 +125,12 @@ nav li a:hover {
   background-color: #ffffff;
   display: inline-grid;
   grid-column-gap: 16px;
-  grid-template-columns: [col1] 196px [col2] 290px [col3] 196px [col4] 280px [col5] 196px [col6] 611px [col7] 186px [col8] 458px [col9] 186px;
+  grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 186px;
   grid-template-rows: auto;
   margin-top: 156px;
      ::-webkit-scrollbar-thumb {
-     background-color: #0076a3;
-    }
+      background-color: #0076a3;
+     }
 }
  
 /***  GRID ITEMS ***/
@@ -147,7 +155,6 @@ nav li a:hover {
   background-image: url('../img/AboutPortrait-sprite.jpg');
   background-repeat: no-repeat;
   overflow: hidden;
-  
 }
 
 .col-2-item:hover {
@@ -268,7 +275,7 @@ nav li a:hover {
   background-repeat: no-repeat;
   background-position: left top;
   overflow: hidden;
-  width: 290px;
+  height: 306px;
 }
 
 .col-8-item {
@@ -317,5 +324,22 @@ nav li a:hover {
   background-color: #0076a3;
 }
 
+/***** FOOTER STYLES *****/
+footer {
+  display: block;
+  height: 350px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px
+  width: 100%;
+}
+
+.footer-grid-container {
+  background-color: #ffffff;
+  display: inline-grid;
+  grid-column-gap: 6px;
+  grid-template-columns: [col1] 29 [col2] 29px [col3] 229px;
+  grid-template-rows: auto;
+  margin-top: 156px;
 
 
