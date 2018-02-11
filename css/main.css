@@ -39,12 +39,20 @@ nav ul {
   color: #686868;
   font-family: "Josefin Slab", serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 250%;
+  list-style-type: none;
+}
+
+nav li a {
+  color: #686868;
+  display: block;
   text-decoration: none;
 }
 
-nav li {
-  color: #686868;
+nav li a:hover {
+  color: #0076a3;
+  display: block;
 }
 
 ::-webkit-scrollbar {
