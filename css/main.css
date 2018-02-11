@@ -97,7 +97,7 @@ nav li {
   background-color: #ffffff;
   display: inline-grid;
   grid-column-gap: 16px;
-  grid-template-columns: [col1] 196px [col2] 290px [col3] 186px [col4] 280px [col5] 186px [col6] 611px [col7] 186px [col8] 458px [col9] 186px;
+  grid-template-columns: [col1] 196px [col2] 290px [col3] 196px [col4] 280px [col5] 196px [col6] 611px [col7] 186px [col8] 458px [col9] 186px;
   grid-template-rows: auto;
   margin-top: 156px;
      ::-webkit-scrollbar-thumb {
@@ -121,26 +121,27 @@ nav li {
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
+  height: 300px;
   width: 270px;
   background-image: url('../img/AboutPortrait-sprite.jpg');
   background-repeat: no-repeat;
   overflow: hidden;
-  margin-right: 10px;
+  
 }
 
 .col-2-item:hover {
-  background-color: lightseagreen;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
+  height: 300px;
   width: 270px;
   background-image: url('../img/AboutPortrait-sprite.jpg');
   background-repeat: no-repeat;
   background-position: right top;
   overflow: hidden;
-  margin-right: 10px;
+  
 }
 
 .col-3-item {
@@ -149,20 +150,21 @@ nav li {
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
+  padding-left: 10px;
 }
 
 .col-4-item {
-  background-color: lightpink;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
-  padding-right: 10px;
   background-image: url('../img/HNCK4941-duotone.jpg');
   background-repeat: no-repeat;
   background-position: left top;
   overflow: hidden;
+  padding-left: 10px;
+  height: 300px;
   width: 270px;
 }
 
@@ -172,11 +174,11 @@ nav li {
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
-  padding-right: 10px;
   background-image: url('../img/HNCK4941.jpg');
   background-repeat: no-repeat;
   background-position: left top;
   overflow: hidden;
+  height: 300px;
   width: 270px;
 }
 
@@ -186,11 +188,11 @@ nav li {
   grid-row-start: 1;
   grid-row-end: 1;
   margin-top: 70px;
+  padding-left:10px;
 }
 
 .col-6-item {
-  border: 1px solid ##7F8C8D;
-  background-color: blue;
+  border: 1px solid #7F8C8D;
   grid-column-start: 6;
   grid-column-end: 7;
   grid-row-start: 1;
@@ -202,12 +204,13 @@ nav li {
   background-repeat: no-repeat;
   background-position: left top;
   overflow: hidden;
-  width: 580px;
+  padding-left: 10px;
+  height: 300px;
+  /*width: 611px;*/
 }
 
 .col-6-item:hover {
-  border: 1px solid ##7F8C8D;
-  background-color: pink;
+  border: 1px solid #7F8C8D;
   grid-column-start: 6;
   grid-column-end: 7;
   grid-row-start: 1;
@@ -219,7 +222,8 @@ nav li {
   background-repeat: no-repeat;
   background-position: left top;
   overflow: hidden;
-  width: 580px;
+  height: 300px;
+  /*width: 611px;*/
 }
 
 .col-7-item {
