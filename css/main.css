@@ -5,7 +5,7 @@ body {
 }
 
 html { 
-  background: url("../img/LandingPage2.jpg") no-repeat center center fixed; 
+  background: url("../img/LandingPage2-fade.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -315,9 +315,25 @@ nav li a:visited {
   grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 1;
+  margin-top: 70px;
   text-align: right;
 }
 
+.col-9-item a {
+  color: #7F8C8D;
+  font-family: "josefin slab", serif;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.col-9-item a:hover {
+  color: #0076a3;
+  font-family: "josefin slab", serif;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 700;
+}
 
 /*** SCROLLBAR STYLES ***/
 .grid-horz-scroll::-webkit-scrollbar {
