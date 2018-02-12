@@ -129,7 +129,7 @@ nav li a:visited {
   background-color: #ffffff;
   display: inline-grid;
   grid-column-gap: 16px;
-  grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 186px;
+  grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 186px [col10] 196px;
   grid-template-rows: auto;
   margin-top: 156px;
      ::-webkit-scrollbar-thumb {
@@ -317,6 +317,7 @@ nav li a:visited {
   grid-row-end: 1;
   text-align: right;
 }
+
 
 /*** SCROLLBAR STYLES ***/
 .grid-horz-scroll::-webkit-scrollbar {
