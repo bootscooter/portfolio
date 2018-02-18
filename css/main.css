@@ -35,6 +35,15 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  color: #0076a3;
+  font-family: "open sans condensed", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  margin-left: 40px;
+  text-align: left;
+}
+
 .wrap {
   min-height: calc(100vh - 100px);
 }
@@ -126,7 +135,7 @@ nav li a:visited {
   border-top: 4px solid #0076a3;
   display: inline-grid;
   grid-column-gap: 16px;
-  grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 186px [col10] 196px;
+  grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 400px [col10] 196px;
   grid-template-rows: auto;
   margin-top: 200px;
      ::-webkit-scrollbar-thumb {
@@ -143,7 +152,7 @@ nav li a:visited {
 }
 
 /***  GRID ITEMS ***/
-.col-1-item {
+.col-1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -153,7 +162,7 @@ nav li a:visited {
   text-align: right;
 }
 
-.col-2-item {
+.col-2 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -166,7 +175,7 @@ nav li a:visited {
   overflow: hidden;
 }
 
-.col-2-item:hover {
+.col-2:hover {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -181,7 +190,7 @@ nav li a:visited {
   
 }
 
-.col-3-item {
+.col-3 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -191,7 +200,7 @@ nav li a:visited {
   text-align: right;
 }
 
-.col-4-item {
+.col-4 {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -206,7 +215,7 @@ nav li a:visited {
   width: 270px;
 }
 
-.col-4-item:hover {
+.col-4:hover {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -220,7 +229,7 @@ nav li a:visited {
   width: 270px;
 }
 
-.col-5-item {
+.col-5 {
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -230,7 +239,7 @@ nav li a:visited {
   text-align: right;
 }
 
-.col-6-item {
+.col-6 {
   border: 1px solid #7F8C8D;
   grid-column-start: 6;
   grid-column-end: 7;
@@ -248,7 +257,7 @@ nav li a:visited {
   /*width: 611px;*/
 }
 
-.col-6-item:hover {
+.col-6:hover {
   border: 1px solid #7F8C8D;
   grid-column-start: 6;
   grid-column-end: 7;
@@ -265,7 +274,7 @@ nav li a:visited {
   /*width: 611px;*/
 }
 
-.col-7-item {
+.col-7 {
   grid-column-start: 7;
   grid-column-end: 8;
   grid-row-start: 1;
@@ -274,7 +283,7 @@ nav li a:visited {
   text-align: right;
 }
 
-.col-8-item {
+.col-8 {
   grid-column-start: 8;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -287,7 +296,7 @@ nav li a:visited {
   height: 306px;
 }
 
-.col-8-item {
+.col-8 {
   border: 1px solid #0176a2;
   grid-column-start: 8;
   grid-column-end: 9;
@@ -301,7 +310,7 @@ nav li a:visited {
   height: 306px;
 }
 
-.col-8-item:hover {
+.col-8:hover {
   border: 1px solid #0176a2;
   grid-column-start: 8;
   grid-column-end: 9;
@@ -315,7 +324,7 @@ nav li a:visited {
   height: 306px;
 }
 
-.col-9-item {
+.col-9 {
   grid-column-start: 9;
   grid-column-end: 10;
   grid-row-start: 1;
@@ -324,7 +333,7 @@ nav li a:visited {
   text-align: right;
 }
 
-.col-9-item a {
+.col-9 a {
   color: #7F8C8D;
   font-family: "josefin slab", serif;
   font-size: 18px;
@@ -332,12 +341,22 @@ nav li a:visited {
   text-decoration: none;
 }
 
-.col-9-item a:hover {
+.col-9 a:hover {
   color: #0076a3;
   font-family: "josefin slab", serif;
   font-size: 18px;
   margin-top: 20px;
   font-weight: 700;
+}
+
+#contact ul li {
+  color: #000000;
+  font-family: "josefin slab", serif;
+  font-size: 24px;
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+
 }
 
 /*** SCROLLBAR STYLES ***/
