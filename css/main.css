@@ -334,9 +334,9 @@ nav li a:visited {
 }
 
 .col-9 a {
-  color: #7F8C8D;
+  color: #000000;
   font-family: "josefin slab", serif;
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 20px;
   text-decoration: none;
 }
@@ -344,7 +344,7 @@ nav li a:visited {
 .col-9 a:hover {
   color: #0076a3;
   font-family: "josefin slab", serif;
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 20px;
   font-weight: 700;
 }
