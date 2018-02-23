@@ -48,6 +48,11 @@ h4 {
   min-height: calc(100vh - 100px);
 }
 
+span {
+  color: #0076a3;
+  font-weight: 700;
+}
+
 #logo {
   display: inline-block;
   width: 200px;
@@ -149,6 +154,14 @@ nav li a:visited {
 
 .grid-container h3 {
   text-align: right;
+}
+
+.left-align-bullet {
+  font-family: "Josefin slab", serif;
+  font-size: 18px;
+  line-height: 150%;
+  list-style-type: circle;
+  text-align: left;
 }
 
 /***  GRID ITEMS ***/
