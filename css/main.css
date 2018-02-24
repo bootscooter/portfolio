@@ -139,7 +139,12 @@ nav li a:visited {
   background-color: #ffffff;
   border-top: 4px solid #0076a3;
   display: inline-grid;
+    display: -ms-grid;
+    
   grid-column-gap: 16px;
+    -ms-grid-columns: 196px 290px 256px 280px 236px 611px 246px 458px 400px 196px;
+    -ms-grid-rows: auto;
+
   grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 400px [col10] 196px;
   grid-template-rows: auto;
   margin-top: 200px;
@@ -170,6 +175,10 @@ nav li a:visited {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;  
   padding-left: 10px;
   text-align: right;
@@ -180,6 +189,10 @@ nav li a:visited {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;  
   height: 300px;
   width: 270px;
@@ -193,6 +206,10 @@ nav li a:visited {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;
   height: 300px;
   width: 270px;
@@ -208,6 +225,10 @@ nav li a:visited {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;
   padding-left: 10px;
   text-align: right;
@@ -218,6 +239,10 @@ nav li a:visited {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 1;
+
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+
   margin-top: 15px;
   background-image: url('../img/HNCK4941-duotone.jpg');
   background-repeat: no-repeat;
@@ -233,6 +258,10 @@ nav li a:visited {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 1;
+
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+
   margin-top: 15px;
   background-image: url('../img/HNCK4941.jpg');
   background-repeat: no-repeat;
@@ -247,6 +276,10 @@ nav li a:visited {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
+
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 1;
+
   margin-top: 15px;
   padding-left:10px;
   text-align: right;
@@ -258,6 +291,10 @@ nav li a:visited {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 1;
+
+      -ms-grid-column: 6;
+      -ms-grid-column-span: 1;
+
   margin-top: 15px;
   overflow: hidden;
   padding-right: 200px;
@@ -276,6 +313,10 @@ nav li a:visited {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 6;
+      -ms-grid-column-span: 1;
+
   margin-top: 15px;
   overflow: hidden;
   padding-right: 200px;
@@ -292,6 +333,10 @@ nav li a:visited {
   grid-column-end: 8;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 7;
+      -ms-grid-column-span: 1;
+
   margin-top: 15px;
   text-align: right;
 }
@@ -301,6 +346,10 @@ nav li a:visited {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;
   background-image: url('../img/Wireframe_Final-duotone.jpg');
   background-repeat: no-repeat;
@@ -315,6 +364,10 @@ nav li a:visited {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;
   background-image: url('../img/WebfootLandingPage-duotone.jpg');
   background-repeat: no-repeat;
@@ -329,6 +382,10 @@ nav li a:visited {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;
   background-image: url('../img/WebfootLandingPage.jpg');
   background-repeat: no-repeat;
@@ -342,6 +399,10 @@ nav li a:visited {
   grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 1;
+
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 1;
+
   margin-top: 15px;
   text-align: right;
 }
