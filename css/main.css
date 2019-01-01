@@ -5,23 +5,24 @@ body {
 }
 
 html { 
-  background: url("../img/LandingPage2-fade.jpg") no-repeat center center fixed; 
+  background: url("../img/background.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
 p {
 	font-family: "Josefin Slab", serif;
-	font-size: 18px;
+	font-size: 1.5rem;
   line-height: 140%;
 }
 
 h1 {
   color: #0076a3;
 	font-family: "open sans condensed", sans-serif;
-	font-size: 20px;
+	font-size: 1.5rem;
   line-height: 100%;;
   margin-left: 40px;
   margin-top: 0;
@@ -30,7 +31,7 @@ h1 {
 h3 {
   color: #0076a3;
   font-family: "open sans condensed", sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 100%;
   margin: 0;
 }
@@ -38,13 +39,14 @@ h3 {
 h4 {
   color: #0076a3;
   font-family: "open sans condensed", sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 100%;
   margin-left: 40px;
   text-align: left;
 }
 
 .wrap {
+  
   min-height: calc(100vh - 100px);
 }
 
@@ -55,27 +57,36 @@ span {
 
 #logo {
   display: inline-block;
-  width: 200px;
   overflow: hidden;
 }
 
 #logo img {
   position: fixed;
-  left: -30px;
-  top: 0px;
+  left: -3rem;
+  top: -1rem;
+  width: 35rem;
 }
 
 /***  NAV ***/
 #nav-container {
   float: left;
-  margin-top: 265px;
-  width: 280px;
+  margin-top: 18rem;
+  width: 22rem;
+  background-color: #fff;
+}
+
+nav p {
+  color: #686868;
+  font-family: "Josefin Slab", serif;
+  font-size: 1rem;
+  line-height: 120%;
+  list-style-type: none;
 }
 
 nav ul {
   color: #686868;
   font-family: "Josefin Slab", serif;
-  font-size: 18px;
+  font-size: 1.3rem;
   line-height: 240%;
   list-style-type: none;
 }
@@ -110,6 +121,7 @@ nav li a:visited {
     background-color: #0076a3;
     border-radius: 2px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 #social-media-fb {
@@ -138,14 +150,15 @@ nav li a:visited {
 .grid-container {
   background-color: #ffffff;
   border-top: 4px solid #0076a3;
+  box-shadow: 0 -10 20px rgba(0,0,0,0.5px);
   display: inline-grid;
-    display: -ms-grid;
+  display: -ms-grid;
     
-  grid-column-gap: 16px;
-    -ms-grid-columns: 196px 290px 256px 280px 236px 611px 246px 458px 400px 196px;
+  grid-column-gap: 20px;
+    -ms-grid-columns: 20rem 25rem 25rem 25rem 25rem 50rem 25rem 50rem 400px 196px;
     -ms-grid-rows: auto;
 
-  grid-template-columns: [col1] 196px [col2] 290px [col3] 256px [col4] 280px [col5] 236px [col6] 611px [col7] 246px [col8] 458px [col9] 400px [col10] 196px;
+  grid-template-columns: [col1] 20rem [col2] 33rem [col3] 25rem [col4] 25rem [col5] 25rem [col6] 50rem [col7] 25rem [col8] 50rem [col9] 400px [col10] 196px;
   grid-template-rows: auto;
   margin-top: 200px;
      ::-webkit-scrollbar-thumb {
@@ -161,14 +174,6 @@ nav li a:visited {
   text-align: right;
 }
 
-.left-align-bullet {
-  font-family: "Josefin slab", serif;
-  font-size: 18px;
-  line-height: 150%;
-  list-style-type: circle;
-  text-align: left;
-}
-
 /***  GRID ITEMS ***/
 .col-1 {
   grid-column-start: 1;
@@ -179,9 +184,27 @@ nav li a:visited {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;  
-  padding-left: 10px;
+    
+  padding-left: 20px;
+  padding-top: 2rem;
   text-align: right;
+ 
+}
+
+.col-1-portfolio {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+
+    
+  padding-left: 20px;
+  padding-top: 2rem;
+  text-align: right;
+ 
 }
 
 .col-2 {
@@ -193,10 +216,12 @@ nav li a:visited {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;  
-  height: 300px;
-  width: 270px;
-  background-image: url('../img/AboutPortrait-sprite.jpg');
+    
+  /*height: 300px;
+  width: 270px;*/
+  background-image: url('../img/about-portrait-duo.jpg');
+  background-size: cover;
+  background-position: left top;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -210,14 +235,52 @@ nav li a:visited {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  height: 300px;
-  width: 270px;
-  background-image: url('../img/AboutPortrait-sprite.jpg');
+    
+  /*height: 300px;
+  width: 270px;*/
+  background-image: url('../img/about-portrait.jpg');
+  background-size: cover;
+  background-position: left top;
   background-repeat: no-repeat;
-  background-position: right top;
+  overflow: hidden; 
+}
+
+.col-2p {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+
+    
+  /*height: 300px;
+  width: 270px;*/
+  background-image: url('../img/twp-website-duo.jpg');
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
   overflow: hidden;
-  
+}
+
+.col-2p:hover {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+
+    
+  /*height: 300px;
+  width: 270px;*/
+  background-image: url('../img/twp-website.jpg');
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  overflow: hidden; 
 }
 
 .col-3 {
@@ -229,8 +292,9 @@ nav li a:visited {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  padding-left: 10px;
+  
+  padding-left: 6rem;
+  padding-top: 2rem;
   text-align: right;
 }
 
@@ -243,14 +307,15 @@ nav li a:visited {
       -ms-grid-column: 4;
       -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  background-image: url('../img/HNCK4941-duotone.jpg');
+  
+  background-image: url('../img/design-notebook-duo.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: left top;
   overflow: hidden;
   padding-left: 10px;
-  height: 300px;
-  width: 270px;
+  /*height: 300px;
+  width: 270px;*/
 }
 
 .col-4:hover {
@@ -262,13 +327,53 @@ nav li a:visited {
       -ms-grid-column: 4;
       -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  background-image: url('../img/HNCK4941.jpg');
+  
+  background-image: url('../img/design-notebook.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: left top;
   overflow: hidden;
-  height: 300px;
-  width: 270px;
+  /*height: 300px;
+  width: 270px;*/
+}
+
+.col-4p {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+
+  
+  background-image: url('../img/portfolio-page-duo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  overflow: hidden;
+  padding-left: 10px;
+  /*height: 300px;
+  width: 270px;*/
+}
+
+.col-4p:hover {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+
+  
+  background-image: url('../img/portfolio-page.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  overflow: hidden;
+  /*height: 300px;
+  width: 270px;*/
 }
 
 .col-5 {
@@ -280,8 +385,9 @@ nav li a:visited {
       -ms-grid-column: 5;
       -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  padding-left:10px;
+  
+  padding-left: 6rem;
+  padding-top: 2rem;
   text-align: right;
 }
 
@@ -295,16 +401,15 @@ nav li a:visited {
       -ms-grid-column: 6;
       -ms-grid-column-span: 1;
 
-  margin-top: 15px;
+  
   overflow: hidden;
   padding-right: 200px;
-  background-image: url('../img/Microsoft-Proposal-2-duotone.jpg');
+  background-image: url('../img/proposal-2-duo.jpg');
   background-repeat: no-repeat;
   background-position: left top;
+  background-size: cover;
   overflow: hidden;
   padding-left: 10px;
-  height: 300px;
-  /*width: 611px;*/
 }
 
 .col-6:hover {
@@ -317,15 +422,57 @@ nav li a:visited {
     -ms-grid-column: 6;
       -ms-grid-column-span: 1;
 
-  margin-top: 15px;
+  
   overflow: hidden;
   padding-right: 200px;
-  background-image: url('../img/Microsoft-Proposal-2.jpg');
+  background-image: url('../img/proposal-2.jpg');
   background-repeat: no-repeat;
   background-position: left top;
+  background-size: cover;
   overflow: hidden;
-  height: 300px;
-  /*width: 611px;*/
+
+}
+
+.col-6p {
+  border: 1px solid #7F8C8D;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+      -ms-grid-column: 6;
+      -ms-grid-column-span: 1;
+
+  
+  overflow: hidden;
+  padding-right: 200px;
+  background-image: url('../img/flyer2-duo.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.col-6p:hover {
+  border: 1px solid #7F8C8D;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+    -ms-grid-column: 6;
+      -ms-grid-column-span: 1;
+
+  
+  overflow: hidden;
+  padding-right: 200px;
+  background-image: url('../img/flyer2.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  overflow: hidden;
+
 }
 
 .col-7 {
@@ -337,11 +484,14 @@ nav li a:visited {
     -ms-grid-column: 7;
       -ms-grid-column-span: 1;
 
-  margin-top: 15px;
+  
   text-align: right;
+  padding-top: 2rem;
+  padding-left: 6rem;
 }
 
 .col-8 {
+  /*border: 1px solid #0176a2;*/
   grid-column-start: 8;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -350,34 +500,16 @@ nav li a:visited {
     -ms-grid-column: 8;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  background-image: url('../img/Wireframe_Final-duotone.jpg');
+  
+  background-image: url('../img/webfoot-landing-duotone.jpg');
   background-repeat: no-repeat;
   background-position: left top;
+  background-size: cover;
   overflow: hidden;
-  height: 306px;
-}
-
-.col-8 {
-  border: 1px solid #0176a2;
-  grid-column-start: 8;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 1;
-
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 1;
-
-  margin-top: 15px;
-  background-image: url('../img/WebfootLandingPage-duotone.jpg');
-  background-repeat: no-repeat;
-  background-position: left top;
-  overflow: hidden;
-  height: 306px;
 }
 
 .col-8:hover {
-  border: 1px solid #0176a2;
+  /*border: 1px solid #0176a2;*/
   grid-column-start: 8;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -386,12 +518,12 @@ nav li a:visited {
     -ms-grid-column: 8;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;
-  background-image: url('../img/WebfootLandingPage.jpg');
+  
+  background-image: url('../img/webfoot-landing.jpg');
   background-repeat: no-repeat;
   background-position: left top;
+  background-size: cover;
   overflow: hidden;
-  height: 306px;
 }
 
 .col-9 {
@@ -403,30 +535,31 @@ nav li a:visited {
     -ms-grid-column: 9;
     -ms-grid-column-span: 1;
 
-  margin-top: 15px;
+  
   text-align: right;
 }
 
 .col-9 a {
   color: #000000;
   font-family: "josefin slab", serif;
-  font-size: 24px;
-  margin-top: 20px;
+  font-size: 1.3rem;
   text-decoration: none;
+}
+
+.col-9 li {
+  font-size: 1.2rem;
+  line-height: 150%;
 }
 
 .col-9 a:hover {
   color: #0076a3;
-  font-family: "josefin slab", serif;
-  font-size: 24px;
-  margin-top: 20px;
   font-weight: 700;
 }
 
 #contact ul li {
   color: #000000;
   font-family: "josefin slab", serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   list-style-type: none;
   text-align: left;
   text-decoration: none;
